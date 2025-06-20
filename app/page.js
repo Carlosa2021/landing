@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-gray-950 text-white px-6 pt-20 pb-12">
+      <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-gray-950 text-white px-6 pt-32 pb-12">
 
         {/* Sección Inicio */}
         <section id="inicio" className="text-center max-w-3xl mx-auto">
@@ -17,10 +17,16 @@ export default function Home() {
             Plataforma todo-en-uno para tokenización, marketplaces NFT y ecosistemas de wallet con tecnología IA.
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-4">
-            <a href="#demo" className="bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-200">
+            <a
+              href="#demo"
+              className="bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-200"
+            >
               Solicitar Demo
             </a>
-            <a href="#servicios" className="border border-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-black">
+            <a
+              href="#servicios"
+              className="border border-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-black"
+            >
               Ver Portafolio
             </a>
           </div>
