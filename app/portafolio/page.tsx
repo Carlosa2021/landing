@@ -35,6 +35,8 @@ export default function PortafolioPage() {
             </p>
             <a
               href="https://inmomarket.chainx.ch/"
+               target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-400 hover:underline text-sm"
             >
               Ver proyecto
@@ -49,6 +51,8 @@ export default function PortafolioPage() {
             </p>
             <a
               href="https://dex.inmotoken.es"
+               target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-400 hover:underline text-sm"
             >
               Ver proyecto
