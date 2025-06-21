@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function PortafolioPage() {
   return (
@@ -13,6 +14,13 @@ export default function PortafolioPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Proyecto 1 */}
           <div className="bg-gray-800/50 border border-white/10 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
+            <Image
+              src="/portafolio/tokenizacion.png"
+              alt="Tokenización Inmobiliaria"
+              width={400}
+              height={240}
+              className="rounded-lg mb-4 w-full h-48 object-cover"
+            />
             <h3 className="text-xl font-semibold mb-2">Tokenización Inmobiliaria</h3>
             <p className="text-gray-300 text-sm mb-4">
               Plataforma que permite comprar fracciones de inmuebles con stablecoins, 100% regulada y compliant (MICA).
@@ -29,13 +37,20 @@ export default function PortafolioPage() {
 
           {/* Proyecto 2 */}
           <div className="bg-gray-800/50 border border-white/10 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
+            <Image
+              src="/portafolio/marketplace.png"
+              alt="Marketplace NFT"
+              width={400}
+              height={240}
+              className="rounded-lg mb-4 w-full h-48 object-cover"
+            />
             <h3 className="text-xl font-semibold mb-2">Marketplace NFT para Real Estate</h3>
             <p className="text-gray-300 text-sm mb-4">
               Inmobiliarias tokenizan sus Inmuebles y las venden como NFTs. Compatible con múltiples wallets y contratos ERC-721, ERC-20, ERC-1155.
             </p>
             <a
               href="https://inmomarket.chainx.ch/"
-               target="_blank"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline text-sm"
             >
@@ -45,13 +60,20 @@ export default function PortafolioPage() {
 
           {/* Proyecto 3 */}
           <div className="bg-gray-800/50 border border-white/10 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
+            <Image
+              src="/portafolio/dex.png"
+              alt="DEX Uniswap"
+              width={400}
+              height={240}
+              className="rounded-lg mb-4 w-full h-48 object-cover"
+            />
             <h3 className="text-xl font-semibold mb-2">DEX personalizado estilo Uniswap</h3>
             <p className="text-gray-300 text-sm mb-4">
               Intercambios de tokens sobre Polygon con UI profesional y contratos smart de liquidez y swap.
             </p>
             <a
               href="https://dex.inmotoken.es"
-               target="_blank"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline text-sm"
             >
