@@ -31,7 +31,7 @@ export default function PortafolioPage() {
           <div className="bg-gray-800/50 border border-white/10 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
             <h3 className="text-xl font-semibold mb-2">Marketplace NFT para Real Estate</h3>
             <p className="text-gray-300 text-sm mb-4">
-              Inmobiliarias tokenizan sus Inmuebles y las venden como NFTs. Compatible con múltiples wallets y contratos ERC-721.
+              Inmobiliarias tokenizan sus Inmuebles y las venden como NFTs. Compatible con múltiples wallets y contratos ERC-721, ERC20, ERC1155.
             </p>
             <a
               href="https://inmomarket.chainx.ch/"
