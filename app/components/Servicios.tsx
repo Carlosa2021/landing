@@ -15,7 +15,7 @@ export default function Servicios() {
           <span className="text-3xl">👛</span>
           <h3 className="font-bold text-xl mt-4 mb-2">Conexión Total</h3>
           <p className="text-sm text-gray-300">
-            Compatible con +500 wallets, email, redes sociales y cuentas abstractas.
+            Compatible con +500 wallets, email, movil, redes sociales y cuentas abstractas.
           </p>
         </div>
         <div className="p-6 border border-gray-700 rounded-lg bg-zinc-900">
