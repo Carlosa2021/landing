@@ -15,10 +15,10 @@ export default function PortafolioPage() {
           <div className="bg-gray-800/50 border border-white/10 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
             <h3 className="text-xl font-semibold mb-2">Tokenización Inmobiliaria</h3>
             <p className="text-gray-300 text-sm mb-4">
-              Plataforma que permite comprar fracciones de inmuebles con stablecoins, 100% regulada y compliant (MiCA).
+              Plataforma que permite comprar fracciones de inmuebles con stablecoins, 100% regulada y compliant (MICA).
             </p>
             <a
-              href="https://inmo-crypto.vercel.app"
+              href="https://plataforma.chainx.ch/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline text-sm"
@@ -29,12 +29,12 @@ export default function PortafolioPage() {
 
           {/* Proyecto 2 */}
           <div className="bg-gray-800/50 border border-white/10 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
-            <h3 className="text-xl font-semibold mb-2">Marketplace NFT para Arte</h3>
+            <h3 className="text-xl font-semibold mb-2">Marketplace NFT para Real Estate</h3>
             <p className="text-gray-300 text-sm mb-4">
-              Artistas tokenizan sus obras y las venden como NFTs. Compatible con múltiples wallets y contratos ERC-721.
+              Inmobiliarias tokenizan sus Inmuebles y las venden como NFTs. Compatible con múltiples wallets y contratos ERC-721.
             </p>
             <a
-              href="#"
+              href="https://inmomarket.chainx.ch/"
               className="text-blue-400 hover:underline text-sm"
             >
               Ver proyecto

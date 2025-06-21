@@ -1,30 +1,37 @@
+'use client';
+
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 import Servicios from './components/Servicios';
 import CallToAction from './components/CallToAction';
-import Hero from './components/Hero';
-import DemoForm from './components/DemoForm';
+import ContactSmartForm from './components/ContactSmartForm';
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-gray-950 text-white px-6 pt-32 pb-12">
 
-        {/* Sección Hero (Inicio) */}
-        <Hero />
+      <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-gray-950 text-white px-6 pt-32 pb-12 scroll-smooth">
 
-        {/* Sección Servicios */}
-        <Servicios id="servicios" />
+        {/* Hero - Sección principal */}
+        <section id="inicio">
+          <Hero />
+        </section>
 
-        {/* Sección Call to Action + Formulario de Demo */}
-        <section id="demo" className="mt-24 space-y-12">
+        {/* Servicios - Qué ofrecemos */}
+        <section id="servicios" className="mt-32">
+          <Servicios />
+        </section>
+
+        {/* Demo - Llamado a la acción + Formulario */}
+        <section id="demo" className="mt-32 space-y-12 text-center">
           <CallToAction />
-          <DemoForm />
+          <ContactSmartForm />
         </section>
 
         {/* Footer */}
-        <footer className="mt-32 text-center text-sm text-gray-600">
-          © 2025 ChainX. Web3 solutions made in Switzerland 🇨🇭
+        <footer className="mt-32 text-center text-sm text-gray-600 border-t border-gray-800 pt-8">
+          © 2025 <strong>ChainX</strong>. Web3 solutions made in Switzerland 🇨🇭
         </footer>
       </main>
     </>
