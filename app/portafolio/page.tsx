@@ -48,7 +48,7 @@ export default function PortafolioPage() {
               Intercambios de tokens sobre Polygon con UI profesional y contratos smart de liquidez y swap.
             </p>
             <a
-              href="#"
+              href="https://dex.inmotoken.es"
               className="text-blue-400 hover:underline text-sm"
             >
               Ver proyecto
