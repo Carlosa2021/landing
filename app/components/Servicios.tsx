@@ -8,7 +8,7 @@ export default function Servicios() {
           <span className="text-3xl">✨</span>
           <h3 className="font-bold text-xl mt-4 mb-2">Tokenización Inteligente</h3>
           <p className="text-sm text-gray-300">
-            Convierte activos reales en tokens digitales cumpliendo con MiCA/KYC/AML.
+            Convierte activos reales en tokens digitales cumpliendo con MICA/KYC/AML.
           </p>
         </div>
         <div className="p-6 border border-gray-700 rounded-lg bg-zinc-900">
