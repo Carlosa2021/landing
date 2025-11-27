@@ -6,9 +6,15 @@ import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   lang: string;
+  copy: {
+    home: string;
+    services: string;
+    portfolio: string;
+    cta: string;
+  };
 }
 
-export default function Navbar({ lang }: NavbarProps) {
+export default function Navbar({ lang, copy }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -22,18 +28,18 @@ export default function Navbar({ lang }: NavbarProps) {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-6 text-sm">
-          <a href="#inicio" className="hover:text-gray-300 transition">Inicio</a>
-          <a href="#servicios" className="hover:text-gray-300 transition">Servicios</a>
-          <Link href={`/${lang}/portafolio`} className="hover:text-gray-300 transition">Portafolio</Link>
+          <a href="#inicio" className="hover:text-gray-300 transition">{copy.home}</a>
+          <a href="#servicios" className="hover:text-gray-300 transition">{copy.services}</a>
+          <Link href={`/${lang}/portafolio`} className="hover:text-gray-300 transition">{copy.portfolio}</Link>
         </div>
 
         {/* CTA */}
         <div className="hidden md:block">
           <a
-            href="#demo"
+            href="#contact"
             className="bg-white text-black px-4 py-2 text-sm rounded-md font-medium hover:bg-gray-100 transition"
           >
-            Solicitar Demo
+            {copy.cta}
           </a>
         </div>
 
@@ -50,15 +56,15 @@ export default function Navbar({ lang }: NavbarProps) {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-black/90 backdrop-blur-md px-6 py-4 space-y-4">
-          <a href="#inicio" className="block hover:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Inicio</a>
-          <a href="#servicios" className="block hover:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Servicios</a>
-          <Link href={`/${lang}/portafolio`} className="block hover:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Portafolio</Link>
+          <a href="#inicio" className="block hover:text-gray-300" onClick={() => setMobileMenuOpen(false)}>{copy.home}</a>
+          <a href="#servicios" className="block hover:text-gray-300" onClick={() => setMobileMenuOpen(false)}>{copy.services}</a>
+          <Link href={`/${lang}/portafolio`} className="block hover:text-gray-300" onClick={() => setMobileMenuOpen(false)}>{copy.portfolio}</Link>
           <a
-            href="#demo"
+            href="#contact"
             className="block mt-2 bg-white text-black px-4 py-2 text-sm rounded-md font-medium text-center hover:bg-gray-100 transition"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Solicitar Demo
+            {copy.cta}
           </a>
         </div>
       )}

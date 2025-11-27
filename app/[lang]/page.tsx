@@ -23,7 +23,7 @@ export default async function HomePage({
 
   return (
     <>
-      <Navbar lang={lang} />
+      <Navbar lang={lang} copy={dictionary.nav} />
       <main
         className="min-h-screen bg-slate-950 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.12),transparent_55%),radial-gradient(circle_at_bottom,rgba(147,51,234,0.12),transparent_60%)] text-white"
         id="main-content"
@@ -33,8 +33,12 @@ export default async function HomePage({
             <Hero lang={lang} copy={dictionary.hero} />
           </section>
 
-          <Stats copy={dictionary.stats} />
-          <Capabilities copy={dictionary.capabilities} />
+          <section id="confianza">
+            <Stats copy={dictionary.stats} />
+          </section>
+          <section id="servicios">
+            <Capabilities copy={dictionary.capabilities} />
+          </section>
           <WalletEcosystem copy={dictionary.wallet} />
           <Integrations copy={dictionary.integrations} />
           <ProofSection copy={dictionary.proof} />

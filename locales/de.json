@@ -16,6 +16,12 @@
       "KI-Agenten, die sichere Onchain-Flows ausführen"
     ]
   },
+  "nav": {
+    "home": "Start",
+    "services": "Leistungen",
+    "portfolio": "Portfolio",
+    "cta": "Demo anfragen"
+  },
   "stats": {
     "title": "Vertrauen, in der Schweiz entwickelt",
     "description": "Resiliente Infrastruktur mit Zertifizierungen für regulierte Geschäftsmodelle.",

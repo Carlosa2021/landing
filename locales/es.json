@@ -16,6 +16,12 @@
       "Agentes AI que ejecutan flujos onchain"
     ]
   },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "cta": "Solicitar demo"
+  },
   "stats": {
     "title": "Confianza diseñada en Suiza",
     "description": "Infraestructura resiliente certificada para operaciones reguladas.",

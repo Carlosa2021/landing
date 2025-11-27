@@ -16,6 +16,12 @@
       "AI agents that execute secure onchain flows"
     ]
   },
+  "nav": {
+    "home": "Home",
+    "services": "Capabilities",
+    "portfolio": "Portfolio",
+    "cta": "Talk to us"
+  },
   "stats": {
     "title": "Trust engineered in Switzerland",
     "description": "Resilient infrastructure with certifications for regulated operations.",
