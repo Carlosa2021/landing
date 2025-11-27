@@ -26,6 +26,7 @@ export default async function PortafolioPage({
             image="/portafolio/tokenizacion.png"
             description="Plataforma que permite comprar fracciones de inmuebles con stablecoins, 100% regulada y compliant (MiCA)."
             link="https://rwa-inmo-token.vercel.app/"
+            priority
           />
 
           <ProjectCard
@@ -70,17 +71,21 @@ export default async function PortafolioPage({
   );
 }
 
+interface ProjectCardProps {
+  title: string;
+  image: string;
+  description: string;
+  link: string;
+  priority?: boolean;
+}
+
 function ProjectCard({
   title,
   image,
   description,
   link,
-}: {
-  title: string;
-  image: string;
-  description: string;
-  link: string;
-}) {
+  priority = false,
+}: ProjectCardProps) {
   return (
     <div className="bg-zinc-900 border border-white/10 p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-left">
       <Image
@@ -89,7 +94,7 @@ function ProjectCard({
         width={400}
         height={240}
         className="rounded-lg mb-4 w-full h-48 object-cover"
-        priority
+        priority={priority}
       />
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-300 text-sm mb-4">{description}</p>
