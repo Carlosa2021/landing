@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "title": "ChainX | Swiss Web3 infrastructure",
+    "description": "Web3 payments, tokenization and AI agents powered by ChainX and thirdweb."
+  },
+  "hero": {
+    "eyebrow": "Powered by thirdweb SDK v5",
+    "badge": "Swiss Grade",
+    "title": "ChainX is the Web3 platform for ambitious teams",
+    "subtitle": "Deliver Apple-grade Web3 experiences with audited Swiss infrastructure: native payments, programmable tokenization and onchain AI agents.",
+    "primaryCta": "Launch interactive demo",
+    "secondaryCta": "View portfolio",
+    "bulletPoints": [
+      "Social, email, MPC and 500+ wallets out of the box",
+      "Gasless USDC & stablecoin payments",
+      "AI agents that execute secure onchain flows"
+    ]
+  },
+  "stats": {
+    "title": "Trust engineered in Switzerland",
+    "description": "Resilient infrastructure with certifications for regulated operations.",
+    "items": [
+      { "value": "$100M+", "label": "Tokenized assets" },
+      { "value": "500+", "label": "Wallets supported" },
+      { "value": "8", "label": "Interconnected networks" },
+      { "value": "99.99%", "label": "Guaranteed uptime" },
+      { "value": "15 ms", "label": "Average latency" },
+      { "value": "SOC2", "label": "Controls & audits" }
+    ]
+  },
+  "capabilities": {
+    "title": "The full thirdweb stack, production ready",
+    "items": [
+      {
+        "title": "Token Studio",
+        "description": "Ship ERC20, ERC721 and ERC1155 with KYC/AML flows, dynamic allowlists and direct sales."
+      },
+      {
+        "title": "Checkout & Payments",
+        "description": "Collect USDC or fiat via on-ramps with Apple Pay-level UX, gasless and financial reporting."
+      },
+      {
+        "title": "Bridge & Swap",
+        "description": "Instant multi-chain liquidity with intelligent routing and fee coverage for your users."
+      },
+      {
+        "title": "AI Agents",
+        "description": "Autonomous agents monitoring onchain data, executing secure flows and alerting your team."
+      },
+      {
+        "title": "Compliance & Data",
+        "description": "Regulatory cockpit with MiCA monitoring, FATF reports and real-time historical analytics."
+      }
+    ]
+  },
+  "wallet": {
+    "title": "ChainX account ecosystem",
+    "description": "Instant onboarding with social identities, MPC wallets and production-ready smart accounts.",
+    "items": [
+      {
+        "title": "Social & Email login",
+        "description": "Google, Apple, Passkeys and multi-factor validation in a single SDK."
+      },
+      {
+        "title": "Smart Accounts",
+        "description": "Sponsor gas, enforce policies and sign with enterprise guardrails every time."
+      },
+      {
+        "title": "Wallet orchestration",
+        "description": "Manage over 500 wallets and devices with real-time monitoring."
+      },
+      {
+        "title": "Developer console",
+        "description": "Logs, metrics and webhook callbacks for product and support teams."
+      }
+    ]
+  },
+  "integrations": {
+    "title": "Integrations & alliances",
+    "description": "We plug into the stack trusted by global brands.",
+    "logos": ["thirdweb", "Safe", "Coinbase", "Polygon", "AWS", "OpenAI"]
+  },
+  "proof": {
+    "title": "Proven outcomes",
+    "items": [
+      {
+        "title": "Safe Treasury",
+        "metric": "$100B+",
+        "description": "Secured with multi-sig features and ChainX wallets for institutional treasuries."
+      },
+      {
+        "title": "King of Destiny",
+        "metric": "1,800 packs",
+        "description": "NFT collection sold out in under two minutes with social onboarding and gasless payments."
+      },
+      {
+        "title": "Coinbase IRL",
+        "metric": "1000+",
+        "description": "In-person transactions managed through our multi-chain stack and operational dashboards."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "ChainX vs alternatives",
+    "rows": [
+      {
+        "feature": "Onboarding & wallets",
+        "chainx": "Social login, MPC and 500+ wallets in one SDK",
+        "others": "Manual integrations with limited wallet coverage"
+      },
+      {
+        "feature": "Payments & tokenization",
+        "chainx": "Gasless checkout, configurable ERC20/721/1155",
+        "others": "No native fiat or programmable sales"
+      },
+      {
+        "feature": "Bridge & liquidity",
+        "chainx": "Automated multi-chain bridge with fee coverage",
+        "others": "Third-party reliance with low visibility"
+      },
+      {
+        "feature": "AI & automation",
+        "chainx": "Onchain agents with real-time monitoring and alerts",
+        "others": "Manual scripts without resilience"
+      },
+      {
+        "feature": "Governance & security",
+        "chainx": "Audited Swiss infra, SOC2 and 24/7 support",
+        "others": "Best-effort support, no SLA"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Let’s build your Web3 use case",
+    "subtitle": "Book a technical workshop with the ChainX team and unlock your next product release.",
+    "primary": "Book workshop",
+    "secondary": "Browse full portfolio",
+    "form": {
+      "stepOneTitle": "Request your tailored demo",
+      "stepTwoTitle": "Tell us about your project",
+      "responseNote": "We reply within 24 business hours.",
+      "emailLabel": "Work email",
+      "emailPlaceholder": "you@company.com",
+      "continueCta": "Continue",
+      "nameLabel": "Name (optional)",
+      "messageLabel": "How can we help?",
+      "interestLabel": "Primary interest",
+      "interestPlaceholder": "Select an option",
+      "interestOptions": [
+        { "value": "tokenization", "label": "Tokenization" },
+        { "value": "marketplace", "label": "NFT Marketplace" },
+        { "value": "wallet", "label": "Wallet ecosystem" },
+        { "value": "payments", "label": "Web3 payments" },
+        { "value": "ai", "label": "AI agents" },
+        { "value": "other", "label": "Other" }
+      ],
+      "backCta": "Back",
+      "submitCta": "Send message",
+      "successMessage": "Thanks for reaching out — we will get back shortly.",
+      "missingEmail": "Please enter your email"
+    }
+  }
+}

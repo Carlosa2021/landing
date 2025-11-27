@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "title": "ChainX | Infraestructura Web3 suiza",
+    "description": "Pagos nativos, tokenización y agentes AI con la plataforma ChainX impulsada por thirdweb."
+  },
+  "hero": {
+    "eyebrow": "Potenciado por thirdweb SDK v5",
+    "badge": "Swiss Grade",
+    "title": "ChainX: la plataforma Web3 para grandes equipos",
+    "subtitle": "Pagos web3, tokenización programable y agentes AI sobre infra suiza auditada. Despliega experiencias Apple-grade en semanas, no meses.",
+    "primaryCta": "Ver demo interactiva",
+    "secondaryCta": "Explorar portafolio",
+    "bulletPoints": [
+      "Onboarding social, email, MPC y +500 wallets",
+      "Pagos gasless con USDC y stablecoins",
+      "Agentes AI que ejecutan flujos onchain"
+    ]
+  },
+  "stats": {
+    "title": "Confianza diseñada en Suiza",
+    "description": "Infraestructura resiliente certificada para operaciones reguladas.",
+    "items": [
+      { "value": "$100M+", "label": "Activos tokenizados" },
+      { "value": "500+", "label": "Wallets soportadas" },
+      { "value": "8", "label": "Redes interoperables" },
+      { "value": "99.99%", "label": "Disponibilidad garantizada" },
+      { "value": "15 ms", "label": "Latencia promedio" },
+      { "value": "SOC2", "label": "Controles y auditorías" }
+    ]
+  },
+  "capabilities": {
+    "title": "Todo el stack thirdweb listo para producción",
+    "items": [
+      {
+        "title": "Token Studio",
+        "description": "Lanza ERC20, ERC721 y ERC1155 con flujos KYC/AML, allowlists dinámicas y ventas directas."
+      },
+      {
+        "title": "Checkout & Payments",
+        "description": "Cobro en USDC o fiat on-ramp con experiencia tipo Apple Pay, gasless y reporting financiero."
+      },
+      {
+        "title": "Bridge & Swap",
+        "description": "Liquidez instantánea multi-chain con ruteo inteligente y cobertura de fees para tus usuarios."
+      },
+      {
+        "title": "AI Agents",
+        "description": "Agentes autónomos que monitorean datos onchain, ejecutan flujos seguros y notifican a tu equipo."
+      },
+      {
+        "title": "Compliance & Data",
+        "description": "Panel regulatorio con monitoreo MiCA, reportes FATF y analítica histórica en tiempo real."
+      }
+    ]
+  },
+  "wallet": {
+    "title": "Ecosistema de cuentas ChainX",
+    "description": "Onboarding instantáneo con identidades sociales, MPC wallets y cuentas abstractas listas para producción.",
+    "items": [
+      {
+        "title": "Social & Email login",
+        "description": "Google, Apple, Passkeys y verificación multi-factor en un solo SDK."
+      },
+      {
+        "title": "Smart Accounts",
+        "description": "Patrocina gas, define límites y firma con políticas empresariales en cada transacción."
+      },
+      {
+        "title": "Wallet orchestration",
+        "description": "Gestiona más de 500 wallets y dispositivos con monitoreo en tiempo real."
+      },
+      {
+        "title": "Developer console",
+        "description": "Logs, métricas y callbacks webhooks para equipos de producto y soporte."
+      }
+    ]
+  },
+  "integrations": {
+    "title": "Integraciones y alianzas",
+    "description": "Trabajamos con el stack en el que confían las marcas globales.",
+    "logos": ["thirdweb", "Safe", "Coinbase", "Polygon", "AWS", "OpenAI"]
+  },
+  "proof": {
+    "title": "Resultados comprobados",
+    "items": [
+      {
+        "title": "Safe Treasury",
+        "metric": "$100B+",
+        "description": "Custodiados con funcionalidades multi-sig y wallets ChainX para tesorerías institucionales."
+      },
+      {
+        "title": "King of Destiny",
+        "metric": "1,800 packs",
+        "description": "Colección NFT vendida en menos de 2 minutos con onboarding social y pagos gasless."
+      },
+      {
+        "title": "Coinbase IRL",
+        "metric": "1000+",
+        "description": "Transacciones físicas gestionadas con nuestro stack multi-chain y dashboards operativos."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "ChainX frente a alternativas",
+    "rows": [
+      {
+        "feature": "Onboarding y wallets",
+        "chainx": "Social login, MPC y +500 wallets en un SDK",
+        "others": "Integraciones manuales con wallets limitadas"
+      },
+      {
+        "feature": "Pagos y tokenización",
+        "chainx": "Checkout gasless, tokens ERC20/721/1155 configurables",
+        "others": "Sin soporte nativo a fiat ni ventas programables"
+      },
+      {
+        "feature": "Bridge & Liquidez",
+        "chainx": "Bridge multi-chain automatizado con coverage de fees",
+        "others": "Dependencia de terceros sin visibilidad"
+      },
+      {
+        "feature": "AI & Automatización",
+        "chainx": "Agentes onchain con monitoreo y alertas en tiempo real",
+        "others": "Scripts manuales sin resiliencia"
+      },
+      {
+        "feature": "Governanza y seguridad",
+        "chainx": "Infra suiza auditada, SOC2 y soporte 24/7",
+        "others": "Soporte best-effort, sin SLA"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Construyamos tu caso de uso Web3",
+    "subtitle": "Agenda un workshop técnico con el equipo ChainX y descubre cómo llevar tu producto al siguiente nivel.",
+    "primary": "Agendar workshop",
+    "secondary": "Ver portafolio completo",
+    "form": {
+      "stepOneTitle": "Solicita tu demo personalizada",
+      "stepTwoTitle": "Comparte el contexto de tu proyecto",
+      "responseNote": "Respondemos en menos de 24 horas hábiles.",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tucorreo@empresa.com",
+      "continueCta": "Continuar",
+      "nameLabel": "Nombre (opcional)",
+      "messageLabel": "¿En qué podemos ayudarte?",
+      "interestLabel": "Interés principal",
+      "interestPlaceholder": "Selecciona una opción",
+      "interestOptions": [
+        { "value": "tokenizacion", "label": "Tokenización" },
+        { "value": "marketplace", "label": "Marketplace NFT" },
+        { "value": "wallet", "label": "Ecosistema de wallets" },
+        { "value": "payments", "label": "Pagos Web3" },
+        { "value": "ai", "label": "Agentes AI" },
+        { "value": "otro", "label": "Otro" }
+      ],
+      "backCta": "Atrás",
+      "submitCta": "Enviar mensaje",
+      "successMessage": "Gracias por tu mensaje, te contactaremos pronto.",
+      "missingEmail": "Por favor ingresa tu email"
+    }
+  }
+}

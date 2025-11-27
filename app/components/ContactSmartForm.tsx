@@ -1,7 +1,31 @@
 'use client';
+
 import { useState } from 'react';
 
-export default function ContactSmartForm() {
+interface InterestOption {
+  value: string;
+  label: string;
+}
+
+interface ContactCopy {
+  stepOneTitle: string;
+  stepTwoTitle: string;
+  responseNote: string;
+  emailLabel: string;
+  emailPlaceholder: string;
+  continueCta: string;
+  nameLabel: string;
+  messageLabel: string;
+  interestLabel: string;
+  interestPlaceholder: string;
+  interestOptions: InterestOption[];
+  backCta: string;
+  submitCta: string;
+  successMessage: string;
+  missingEmail: string;
+}
+
+export default function ContactSmartForm({ copy }: { copy: ContactCopy }) {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     email: '',
@@ -10,72 +34,86 @@ export default function ContactSmartForm() {
     interest: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleStep1 = (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.email.trim() === '') return alert('Por favor ingresa tu email');
+    if (formData.email.trim() === '') {
+      alert(copy.missingEmail);
+      return;
+    }
     setStep(2);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí puedes conectar con tu backend, email service o automatización
     console.log('Formulario enviado:', formData);
-    alert('Gracias por tu mensaje, te contactaremos pronto.');
+    alert(copy.successMessage);
     setFormData({ email: '', name: '', message: '', interest: '' });
     setStep(1);
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-24 bg-gray-800/40 rounded-xl p-8 shadow-lg text-white">
-      <h2 className="text-2xl font-bold mb-6 text-center">
-        {step === 1 ? 'Solicita tu demo personalizada' : 'Cuéntanos un poco más'}
+    <div className="w-full rounded-2xl border border-white/10 bg-white/5 p-7 text-white backdrop-blur">
+      <h2 className="text-xl font-semibold">
+        {step === 1 ? copy.stepOneTitle : copy.stepTwoTitle}
       </h2>
+      <p className="mt-2 text-sm text-white/60">{copy.responseNote}</p>
 
       {step === 1 && (
-        <form onSubmit={handleStep1} className="space-y-4">
+        <form onSubmit={handleStep1} className="mt-6 space-y-4">
           <div>
-            <label className="block text-sm mb-1">Correo electrónico</label>
+            <label className="block text-xs font-medium uppercase tracking-[0.3em] text-white/50">
+              {copy.emailLabel}
+            </label>
             <input
               type="email"
               name="email"
-              placeholder="tucorreo@ejemplo.com"
-              className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-600"
+              placeholder={copy.emailPlaceholder}
+              className="mt-2 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
               value={formData.email}
               onChange={handleChange}
               required
             />
           </div>
 
-          <button type="submit" className="w-full bg-white text-black py-2 rounded-md font-semibold hover:bg-gray-200 transition">
-            Continuar
+          <button
+            type="submit"
+            className="w-full rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+          >
+            {copy.continueCta}
           </button>
         </form>
       )}
 
       {step === 2 && (
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div>
-            <label className="block text-sm mb-1">Nombre (opcional)</label>
+            <label className="block text-xs font-medium uppercase tracking-[0.3em] text-white/50">
+              {copy.nameLabel}
+            </label>
             <input
               type="text"
               name="name"
-              placeholder="Tu nombre"
-              className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-600"
+              placeholder={copy.nameLabel}
+              className="mt-2 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
               value={formData.name}
               onChange={handleChange}
             />
           </div>
 
           <div>
-            <label className="block text-sm mb-1">Mensaje</label>
+            <label className="block text-xs font-medium uppercase tracking-[0.3em] text-white/50">
+              {copy.messageLabel}
+            </label>
             <textarea
               name="message"
-              placeholder="¿En qué podemos ayudarte?"
-              className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-600"
+              placeholder={copy.messageLabel}
+              className="mt-2 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
               rows={4}
               value={formData.message}
               onChange={handleChange}
@@ -83,34 +121,37 @@ export default function ContactSmartForm() {
           </div>
 
           <div>
-            <label className="block text-sm mb-1">Interés</label>
+            <label className="block text-xs font-medium uppercase tracking-[0.3em] text-white/50">
+              {copy.interestLabel}
+            </label>
             <select
               name="interest"
               value={formData.interest}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-600"
+              className="mt-2 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
             >
-              <option value="">Selecciona una opción</option>
-              <option value="tokenizacion">Tokenización</option>
-              <option value="marketplace">Marketplace NFT</option>
-              <option value="wallet">Integración de Wallet</option>
-              <option value="otro">Otro</option>
+              <option value="">{copy.interestPlaceholder}</option>
+              {copy.interestOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
             </select>
           </div>
 
-          <div className="flex justify-between gap-4">
+          <div className="flex gap-3">
             <button
               type="button"
               onClick={() => setStep(1)}
-              className="w-1/2 bg-gray-700 text-white py-2 rounded-md hover:bg-gray-600"
+              className="w-1/2 rounded-full border border-white/20 px-4 py-3 text-sm font-semibold text-white/70 transition hover:bg-white/10"
             >
-              Atrás
+              {copy.backCta}
             </button>
             <button
               type="submit"
-              className="w-1/2 bg-white text-black py-2 rounded-md font-semibold hover:bg-gray-200 transition"
+              className="w-1/2 rounded-full bg-white px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
             >
-              Enviar mensaje
+              {copy.submitCta}
             </button>
           </div>
         </form>
